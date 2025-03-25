@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-const mongoURL='mongodb+srv://viveksinghmet:uqKQ6rtyMVB603x9@cluster0.3vqlj.mongodb.net/foodonmern?retryWrites=true&w=majority&appName=Cluster0'
+const mongoURL='mongodb+srv://@cluster0.3vqlj.mongodb.net/foodonmern?retryWrites=true&w=majority&appName=Cluster0'
 const mongodb=async()=>{
  await mongoose.connect(mongoURL,{useNewUrlParser:true, useUnifiedTopology: true },async (err,result)=>{
     if(err){
